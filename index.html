@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kawaii Donut Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    <!-- Import the component -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </head>
   <body>
     <h1>Welcome to Kawaii Donut Shop!</h1>
     <model-viewer
       bounds="tight"
       enable-pan
-      src="kitty-donut-shop.glb"
+      src="https://eileenxue.github.io/kawaii-donut-shop-demo/kitty-donut-shop.glb"
       ar
       ar-modes="scene-viewer webxr quick-look"
       camera-controls
@@ -25,9 +26,12 @@
         <div class="update-bar"></div>
       </div>
       <button slot="ar-button" id="ar-button">View in your space</button>
-      <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
-      </div>
     </model-viewer>
+    <p>
+      <a href="https://skfb.ly/oqSyM">"Kitty Donut Shop"</a> by Mikkel Garde Blaase (plorigon) is licensed under
+      <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution.</a>
+    </p>
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </body>
 </html>
